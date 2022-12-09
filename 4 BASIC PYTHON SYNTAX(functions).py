@@ -16,3 +16,4 @@ def hbd():
     x=int(input("ENTER YOUR AGE"))
     print(f"HOW ARE YOU,{y} I WANNA WISH YOU HAPPY BIRTHDAY!!!!! AS YOU TURN {x} YEARS OLD")
 hbd()
+
