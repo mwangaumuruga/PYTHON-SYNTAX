@@ -1,6 +1,6 @@
 """this piece of code explains basic python syntax 
 since thats the first beginner step in   software
-development.The syntax important in understanding any programming ganguage """
+development.The syntax is important in understanding any programming language """
 
 # 1- HOW TO DISPLAY OUTPUT 
 print(" printing  string output on the screen ")
@@ -31,5 +31,5 @@ x=25
 print(x)
 
 # 5-COMMENTING
-#("we uses three qoutes i.e """ comment"""") for multiline comment")
+#("we use three qoutes i.e """ comment"""") for multiline comment")
 # for single line comments we -#
