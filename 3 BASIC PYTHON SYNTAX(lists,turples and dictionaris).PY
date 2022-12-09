@@ -16,7 +16,7 @@ print("This are the countries that am gonna focus on improving with my invention
 # 3-DICTIONARIES-THEY ARE USED TO STORE A COLLECTION OF DATA PAIRS I.e password or in normal terms as the usual dictionary
 passwords={"code":1234,"kartel":4567,"victor":345,"mwangi":4567}
 print(passwords)
-#you can delete update and do other manipulatins in dictionaries
+#you can delete update and do other manipulations in dictionaries
 
 
 
