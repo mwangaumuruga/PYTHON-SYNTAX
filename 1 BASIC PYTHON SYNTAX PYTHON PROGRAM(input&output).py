@@ -1,6 +1,7 @@
 # 1- DISPLAY OUTPUT 
+#string
 print(" printing  string output on the screen ")
-# print all the othe data types
+# print all the other data types
 print(2,2.57777,0.8)
 
 #  2- RECEIVING INPUT FROM USER
