@@ -1,8 +1,4 @@
-"""this piece of code explains basic python syntax 
-since thats the first beginner step in   software
-development.The syntax is important in understanding any programming language """
-
-# 1- HOW TO DISPLAY OUTPUT 
+# 1- DISPLAY OUTPUT 
 print(" printing  string output on the screen ")
 # print all the othe data types
 print(2,2.57777,0.8)
