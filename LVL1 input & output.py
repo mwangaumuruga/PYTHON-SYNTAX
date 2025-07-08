@@ -1,3 +1,5 @@
+#input ,ouput,variables & commenting
+
 # 1- DISPLAY OUTPUT 
 #string
 print(" printing  string output on the screen ")
