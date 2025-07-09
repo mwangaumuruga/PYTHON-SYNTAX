@@ -1,7 +1,5 @@
-""" This is the second python basic syntax program and it focuses strictly on LOGIC & loops with conditions by first 
-showing the basic syntax then working with them in a program"""
-""" there are types types of loops OR [CONDITIONS] in python the FOR ,IF & WHILE STATEMENTS.This conditions
- help us create  repeating loops untill they are fullfilled or ended """
+"""Logic &  loops OR [CONDITIONS] in python the FOR ,IF & WHILE STATEMENTS.This conditions
+ help us create  repeating loops untill fullfilled or ended """
 "identation is essential in python it enhances code execution"
 
 # 1- The "FOR" loop 
