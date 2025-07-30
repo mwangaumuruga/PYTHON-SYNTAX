@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{color: blue;} 
+        h1{ color: red;
+            position:relative;}
+    </style>
+</head>
+<body>
+    <h1>
+    Classes</h1>
+    <p>Classes are used to create a series of  functions with objects with the same attributes and Visualize objects as true life items with characteristics and also have a special relation with 
+        each other or what they generally do</p>
+    </hr>
+    <ul><p>
+    <li><h3>How to use classes in python </h3>
+        <b>class student:<br>
+            def __init__(self, name, age, sex):<br>
+            --- self.name=name<br>
+            self.age=age<br>
+        self.sex=sex<br><br>
+        a=student("moses",21,"male")<br>
+        print(a.name)<br>
+        print(a.age)<br>
+        print(a.sex)<br>
+        </b>
+<br>
+    </li> 
+    <li><h3>Program to demonstrate instance objects in a class</h3>
+        <b>class Fruit:<br>
+        ---def __init__(self, message):<br>
+            ------self.message = message<br>
+    
+    # Creating instances of the Fruit class<br>
+    apple = Fruit("Fruits are sweet and nutritious")<br>
+    banana = Fruit("This instance class coexists with others, hence fruits are healthy")<br>
+    
+    # Accessing and printing instance attributes<br>
+    print(apple.message)<br>
+    print(banana.message)</b><br>
+
+    <li><h3>Program demonstrating an initializer (__init__) and instance methods</h3><br>
+
+<b>class Pet:<br>
+    def __init__(self, name, sound):<br>
+       --- self.name = name    # Name of the pet<br>
+       --- self.sound = sound  # Sound the pet makes<br>
+
+    def speak(self):<br>
+        ---print(f"{self.name} {self.sound}")<br>
+
+# Creating instances of Pet<br>
+dog = Pet("Dog", "barks")<br>
+cat = Pet("Cat", "purrs")<br>
+
+# Calling the speak method<br>
+dog.speak()<br>
+cat.speak()</b><br>
+<p>__init__ is the initializer (often called the constructor). It runs when an object is created.
+
+self refers to the current instance — it lets you set or access attributes tied to a particular object.
+
+speak() is a custom method that outputs pet details.
+
+Using f"{self.name} {self.sound}" is a Pythonic way (via f-strings) to format output cleanly.</p></li>
+
+
+<li><h3> A program to show the basic working of a money calculator</h3><br>
+<b>
+class BankAccount:<br>
+    def __init__(self, balance=0):<br>
+        ---self.balance = balance  # Initial balance, default is 0<br>
+
+    def deposit(self, amount):<br>
+       --- self.balance += amount<br>
+        ---return self.balance<br>
+
+    def withdraw(self, amount):<br>
+        if amount > self.balance:<br>
+           --- return "Insufficient balance"<br>
+        self.balance -= amount<br>
+        return self.balance<br>
+
+account = BankAccount(1000)  # Starting with 1000<br>
+print("After deposit:", account.deposit(1000000))<br>
+print("After withdrawal:", account.withdraw(500000))<br>
+</li><br></b></ul>
+
+</body>
+</html>
