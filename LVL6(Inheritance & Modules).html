@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance and Modules in Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #fafafa;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: darkgreen;
+            margin-top: 30px;
+        }
+        h3 {
+            color: blue;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 12px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: Consolas, monospace;
+            font-size: 15px;
+        }
+        code {
+            color: #c7254e;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inheritance and Modules in Python</h1>
+
+    <!-- Inheritance Section -->
+    <h2>🐾 Inheritance in Python</h2>
+    <p>
+        <b>Inheritance</b> in Python is used to pass class attributes onto another subclass.  
+        The subclass gains all the traits of the parent class, but it can also have its 
+        own attributes, which overwrite or extend the parent’s code.
+    </p>
+    <p>
+        👉 Example: Create a class <code>Animals</code>, then create a <code>Mammals</code> subclass.  
+        A <code>Dog</code> inherits all the attributes of <code>Mammals</code> (which itself inherits from <code>Animals</code>).
+    </p>
+    <hr>
+
+    <h3>Python Inheritance Example</h3>
+    <pre><code class="python">
+# Base class
+class Animals:
+    def __init__(self):
+        # Attributes for all animals
+        self.breathing_system = "All animals have a respiratory system that uses oxygen"
+        self.digestion_system = "All animals digest food to get energy for survival"
+        self.locomotive_system = "All animals have a way of moving from one place to another"
+
+# Subclass that inherits from Animals
+class Mammals(Animals):
+    def respiratory(self):
+        # Overwrites or extends parent behavior
+        print("Most mammals have a set of lungs and a nose hence:", self.breathing_system)
+
+    def digest(self):
+        print("Most mammals have a digestive tract with teeth and chemicals hence:", self.digestion_system)
+
+    def movement(self):
+        print("All mammals can move by the use of their four legs hence:", self.locomotive_system)
+
+# Another subclass that inherits from Mammals
+class Dog(Mammals):
+    def inherited_attributes(self):
+        print("These are the general characteristics of a dog")
+
+# Example Usage
+a = Mammals().respiratory()
+b = Mammals().digest()
+c = Mammals().movement()
+d = Dog()
+d.inherited_attributes()
+    </code></pre>
+
+    <!-- Modules Section -->
+    <h2>📦 Modules in Python</h2>
+    <p>
+        A <b>module</b> in Python is simply a file that contains Python code (functions, classes, or variables).  
+        Modules help organize code into separate files, making it reusable and easier to maintain.  
+    </p>
+    <p>
+        👉 You can use:  
+        - <b>Built-in modules</b> (like <code>math</code>, <code>os</code>, <code>random</code>)  
+        - <b>Custom modules</b> (your own <code>.py</code> files)  
+    </p>
+    <hr>
+
+    <h3>Custom Module Example</h3>
+    <p><b>File:</b> <code>mymodule.py</code></p>
+    <pre><code class="python">
+# mymodule.py
+# A simple custom module
+
+def greeting(name):
+    return f"Hello, {name}! Welcome to Python modules."
+
+def add_numbers(a, b):
+    return a + b
+    </code></pre>
+
+    <p><b>File:</b> <code>main.py</code></p>
+    <pre><code class="python">
+# main.py
+import mymodule   # importing the custom module
+
+# Using functions from the module
+print(mymodule.greeting("Moses"))
+print("The sum is:", mymodule.add_numbers(5, 7))
+    </code></pre>
+
+    <h3>Built-in Module Example</h3>
+    <pre><code class="python">
+import math
+
+# Using math module functions
+print("Square root of 16 is:", math.sqrt(16))
+print("Pi value is:", math.pi)
+    </code></pre>
+
+</body>
+</html>

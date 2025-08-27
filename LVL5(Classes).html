@@ -3,92 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Python Classes Tutorial</title>
     <style>
-        h3{color: blue;} 
-        h1{ color: red;
-            position:relative;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #fafafa;
+            line-height: 1.6;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        h3 {
+            color: blue;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 12px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: Consolas, monospace;
+            font-size: 15px;
+        }
+        code {
+            color: #c7254e;
+        }
+        hr {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
-    <h1>
-    Classes</h1>
-    <p>Classes are used to create a series of  functions with objects with the same attributes and Visualize objects as true life items with characteristics and also have a special relation with 
-        each other or what they generally do</p>
-    </hr>
-    <ul><p>
-    <li><h3>How to use classes in python </h3>
-        <b>class student:<br>
-            def __init__(self, name, age, sex):<br>
-            --- self.name=name<br>
-            self.age=age<br>
-        self.sex=sex<br><br>
-        a=student("moses",21,"male")<br>
-        print(a.name)<br>
-        print(a.age)<br>
-        print(a.sex)<br>
-        </b>
-<br>
-    </li> 
-    <li><h3>Program to demonstrate instance objects in a class</h3>
-        <b>class Fruit:<br>
-        ---def __init__(self, message):<br>
-            ------self.message = message<br>
-    
-    # Creating instances of the Fruit class<br>
-    apple = Fruit("Fruits are sweet and nutritious")<br>
-    banana = Fruit("This instance class coexists with others, hence fruits are healthy")<br>
-    
-    # Accessing and printing instance attributes<br>
-    print(apple.message)<br>
-    print(banana.message)</b><br>
+    <h1>Classes in Python</h1>
+    <p>
+        Classes are used to create a collection of functions and attributes that define objects.  
+        They allow us to visualize objects as real-life items with characteristics and behaviors,  
+        and also show relationships between objects.
+    </p>
+    <hr>
 
-    <li><h3>Program demonstrating an initializer (__init__) and instance methods</h3><br>
+    <ul>
+        <!-- Example 1 -->
+        <li>
+            <h3>How to use classes in Python</h3>
+            <pre><code class="python">
+class Student:
+    def __init__(self, name, age, sex):
+        self.name = name
+        self.age = age
+        self.sex = sex
 
-<b>class Pet:<br>
-    def __init__(self, name, sound):<br>
-       --- self.name = name    # Name of the pet<br>
-       --- self.sound = sound  # Sound the pet makes<br>
+# Creating an object of the class
+a = Student("Moses", 21, "Male")
+print(a.name)
+print(a.age)
+print(a.sex)
+            </code></pre>
+        </li>
 
-    def speak(self):<br>
-        ---print(f"{self.name} {self.sound}")<br>
+        <!-- Example 2 -->
+        <li>
+            <h3>Program to demonstrate instance objects in a class</h3>
+            <pre><code class="python">
+class Fruit:
+    def __init__(self, message):
+        self.message = message
 
-# Creating instances of Pet<br>
-dog = Pet("Dog", "barks")<br>
-cat = Pet("Cat", "purrs")<br>
+# Creating instances of the Fruit class
+apple = Fruit("Fruits are sweet and nutritious")
+banana = Fruit("This instance coexists with others, hence fruits are healthy")
 
-# Calling the speak method<br>
-dog.speak()<br>
-cat.speak()</b><br>
-<p>__init__ is the initializer (often called the constructor). It runs when an object is created.
+# Accessing and printing instance attributes
+print(apple.message)
+print(banana.message)
+            </code></pre>
+        </li>
 
-self refers to the current instance — it lets you set or access attributes tied to a particular object.
+        <!-- Example 3 -->
+        <li>
+            <h3>Program demonstrating an initializer (__init__) and instance methods</h3>
+            <pre><code class="python">
+class Pet:
+    def __init__(self, name, sound):
+        self.name = name    # Name of the pet
+        self.sound = sound  # Sound the pet makes
 
-speak() is a custom method that outputs pet details.
+    def speak(self):
+        print(f"{self.name} {self.sound}")
 
-Using f"{self.name} {self.sound}" is a Pythonic way (via f-strings) to format output cleanly.</p></li>
+# Creating instances of Pet
+dog = Pet("Dog", "barks")
+cat = Pet("Cat", "purrs")
 
+# Calling the speak method
+dog.speak()
+cat.speak()
+            </code></pre>
+            <p>
+                <b>__init__</b> is the initializer (constructor) that runs when an object is created.  
+                <b>self</b> refers to the current instance and allows access to attributes of that object.  
+                <b>speak()</b> is a method that outputs pet details.  
+                The <code>f"{self.name} {self.sound}"</code> is an f-string, a clean way to format output.
+            </p>
+        </li>
 
-<li><h3> A program to show the basic working of a money calculator</h3><br>
-<b>
-class BankAccount:<br>
-    def __init__(self, balance=0):<br>
-        ---self.balance = balance  # Initial balance, default is 0<br>
+        <!-- Example 4 -->
+        <li>
+            <h3>A program to show the basic working of a money calculator</h3>
+            <pre><code class="python">
+class BankAccount:
+    def __init__(self, balance=0):
+        self.balance = balance  # Initial balance, default is 0
 
-    def deposit(self, amount):<br>
-       --- self.balance += amount<br>
-        ---return self.balance<br>
+    def deposit(self, amount):
+        self.balance += amount
+        return self.balance
 
-    def withdraw(self, amount):<br>
-        if amount > self.balance:<br>
-           --- return "Insufficient balance"<br>
-        self.balance -= amount<br>
-        return self.balance<br>
+    def withdraw(self, amount):
+        if amount > self.balance:
+            return "Insufficient balance"
+        self.balance -= amount
+        return self.balance
 
-account = BankAccount(1000)  # Starting with 1000<br>
-print("After deposit:", account.deposit(1000000))<br>
-print("After withdrawal:", account.withdraw(500000))<br>
-</li><br></b></ul>
-
+# Example usage
+account = BankAccount(1000)  # Starting with 1000
+print("After deposit:", account.deposit(1000000))
+print("After withdrawal:", account.withdraw(500000))
+            </code></pre>
+        </li>
+    </ul>
 </body>
 </html>
