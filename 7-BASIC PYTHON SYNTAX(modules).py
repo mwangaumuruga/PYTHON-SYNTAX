@@ -46,7 +46,7 @@
 <body>
     <h1>Inheritance and Modules in Python</h1>
 
-    <!-- Inheritance Section -->
+ 
     <h2>🐾 MODULES in Python</h2>
     <p>
 
