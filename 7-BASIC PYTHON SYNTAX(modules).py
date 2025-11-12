@@ -44,7 +44,7 @@
     </style>
 </head>
 <body>
-    <h1>Inheritance and Modules in Python</h1>
+    <h1>Modules in Python</h1>
 
  
     <h2>🐾 MODULES in Python</h2>
