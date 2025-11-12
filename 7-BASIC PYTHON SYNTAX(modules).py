@@ -47,10 +47,10 @@
     <h1>Inheritance and Modules in Python</h1>
 
     <!-- Inheritance Section -->
-    <h2>🐾 Inheritance in Python</h2>
+    <h2>🐾 MODULES in Python</h2>
     <p>
 
-""" MODULES are usually imported and generally they are a set of prewrittten code that helps reduce the work of 
+"""  are usually imported and generally they are a set of prewrittten code that helps reduce the work of 
 the work of rewriting codes that can be used i.e Maths standards  or a code generate randomness and this helps save 
 time and also get us on pint without focusing on the complex stuff"""
 
@@ -58,4 +58,7 @@ time and also get us on pint without focusing on the complex stuff"""
 import random
 countries=("rwanda","mauritius","seychelles","southafrica","madagascar""tunisia","turkey","israel","usa","china","spain")
 print(random.choice(countries))
+<p>
+</body>
+</html>
 
